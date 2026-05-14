@@ -1,0 +1,569 @@
+<!doctype html>
+
+<!-- Define que o documento usa HTML5 -->
+<html lang="pt-br">
+
+<head>
+
+    <!-- Define os caracteres especiais e acentos -->
+    <meta charset="utf-8">
+
+    <!-- Faz o site funcionar corretamente no celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Nome que aparece na aba do navegador -->
+    <title>Al dente & Além</title>
+
+    <!-- Importa o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Conecta o arquivo CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER / CABEÇALHO ================= -->
+    <header>
+
+        <!-- Logo do site -->
+        <img src="./img/Foto transparente segunda opçãoo.png" alt="Logo Macarrão" class="logo">
+
+        <!-- Menu de navegação -->
+        <nav>
+
+            <a href="#">
+
+                🏠 Home
+            </a>
+
+            <a href="#cardapio">
+                🍽️ Cardápio do dia
+            </a>
+
+            <a href="cardapio.html" target="_blank">
+                🍽️ Cardápio da Casa 
+            </a>
+
+
+            <a href="#contato">
+                📞 Contato
+            </a>
+
+            <a href="#localizacao">
+                📍 Localização
+            </a>
+
+            <a href="avaliacao.html" target="_blank">
+                ⭐ Avaliação
+            </a>
+
+
+        </nav>
+
+
+    </header>
+
+    <!-- ================= CARROSSEL ================= -->
+
+    <!-- Estrutura principal do carrossel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+
+        <!-- Indicadores (bolinhas embaixo do carrossel) -->
+        <div class="carousel-indicators">
+
+            <!-- Botão slide 1 -->
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active">
+            </button>
+
+            <!-- Botão slide 2 -->
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1">
+            </button>
+
+            <!-- Botão slide 3 -->
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2">
+            </button>
+
+        </div>
+
+        <!-- Área interna dos slides -->
+        <div class="carousel-inner">
+
+            <!-- ================= SLIDE 1 ================= -->
+            <div class="carousel-item active">
+
+                <!-- Imagem do slide -->
+                <img src="./img/Macarrao-cremoso-de-frigideira.jpg" class="d-block w-100" alt="Macarrão Cremoso">
+
+                <!-- Texto do slide -->
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>Macarrão Cremoso</h5>
+
+                    <p>
+                        Macarrão cremoso envolvido em um molho suave e aveludado,
+                        com queijo derretido e aroma irresistível.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ================= SLIDE 2 ================= -->
+            <div class="carousel-item">
+
+                <img src="./img/macarrao-pizza-facil-00.jpg" class="d-block w-100" alt="Macarrão Pizza">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>Macarrão Pizza Fácil</h5>
+
+                    <p>
+                        Receita saborosa inspirada no sabor de pizza,
+                        com muito queijo e molho especial.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ================= SLIDE 3 ================= -->
+            <div class="carousel-item">
+
+                <img src="./img/Macarrao-a-bolonhesa.jpg" class="d-block w-100" alt="Macarrão Bolonhesa">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>Macarrão à Bolonhesa</h5>
+
+                    <p>
+                        Massa tradicional italiana acompanhada de molho bolonhesa.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= BOTÃO ANTERIOR ================= -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+
+            <!-- Ícone da seta -->
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+        <!-- ================= BOTÃO PRÓXIMO ================= -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+
+            <!-- Ícone da seta -->
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+    </div>
+
+    <div class="container cardapio">
+        <div class="Menu cardapio" id="cardapio">
+            <p>PROMOÇÃO DO DIA</p>
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- ================= CARD ================= -->
+
+
+    <div class="container secao produtos">
+
+        <!-- CARD 1 -->
+        <div class="card" style="width: 18rem;">
+            <img src="./img/Pratos/Macarrao carne moida ao bancon.jpg" class="card-img-top">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    Macarrão de Carne Moída ao Bacon
+                </h5>
+
+                <p class="card-text">
+                    Macarrão com carne moída e bacon:
+                    sabor intenso, cremosidade e o toque crocante.
+                </p>
+
+                <!-- POPUP -->
+                <input type="checkbox" id="promo1" class="popup-toggle">
+
+                <label for="promo1" class="btn btn-warning">
+                    🔥 Promoção do Dia
+                </label>
+
+                <div class="popup">
+                    <div class="popup-box">
+
+                        <h2>🔥 Promoção do Dia</h2>
+
+                        <p>
+                            De <s>R$ 39,90</s>
+                        </p>
+
+                        <h3>R$ 29,90</h3>
+
+                        <label for="promo1" class="close">
+                            Fechar
+                        </label>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card" style="width: 18rem;">
+            <img src="./img/Pratos/galo-imagem-receitas-macarrao-com-frango-share.jpg" class="card-img-top">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    Macarrão com Frango
+                </h5>
+
+                <p class="card-text">
+                    Combinação leve, cremosa e cheia de sabor.
+                </p>
+
+                <input type="checkbox" id="promo2" class="popup-toggle">
+
+                <label for="promo2" class="btn btn-warning">
+                    🔥 Promoção do Dia
+                </label>
+
+                <div class="popup">
+                    <div class="popup-box">
+
+                        <h2>🔥 Promoção do Dia</h2>
+
+                        <p>
+                            De <s>R$ 34,90</s>
+                        </p>
+
+                        <h3>R$ 24,90</h3>
+
+                        <label for="promo2" class="close">
+                            Fechar
+                        </label>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card" style="width: 18rem;">
+            <img src="./img/Pratos/Macarrao-ao-molho-branco.jpg" class="card-img-top">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    Macarrão ao Molho Branco
+                </h5>
+
+                <p class="card-text">
+                    Cremoso, suave e irresistível.
+                </p>
+
+                <input type="checkbox" id="promo3" class="popup-toggle">
+
+                <label for="promo3" class="btn btn-warning">
+                    🔥 Promoção do Dia
+                </label>
+
+                <div class="popup">
+                    <div class="popup-box">
+
+                        <h2>🔥 Promoção do Dia</h2>
+
+                        <p>
+                            De <s>R$ 36,90</s>
+                        </p>
+
+                        <h3>R$ 26,90</h3>
+
+                        <label for="promo3" class="close">
+                            Fechar
+                        </label>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card" style="width: 18rem;">
+            <img src="./img/Pratos/macarrao com calabresa.jpg" class="card-img-top">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    Macarrão com Calabresa
+                </h5>
+
+                <p class="card-text">
+                    Sabor marcante e irresistível.
+                </p>
+
+                <input type="checkbox" id="promo4" class="popup-toggle">
+
+                <label for="promo4" class="btn btn-warning">
+                    🔥 Promoção do Dia
+                </label>
+
+                <div class="popup">
+                    <div class="popup-box">
+
+                        <h2>🔥 Promoção do Dia</h2>
+
+                        <p>
+                            De <s>R$ 37,90</s>
+                        </p>
+
+                        <h3>R$ 27,90</h3>
+
+                        <label for="promo4" class="close">
+                            Fechar
+                        </label>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="card" style="width: 18rem;">
+            <img src="./img/Pratos/Macarrao alho e oleo.png" class="card-img-top">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    Macarrão Alho e Óleo
+                </h5>
+
+                <p class="card-text">
+                    Simples, leve e cheio de sabor.
+                </p>
+
+                <input type="checkbox" id="promo5" class="popup-toggle">
+
+                <label for="promo5" class="btn btn-warning">
+                    🔥 Promoção do Dia
+                </label>
+
+                <div class="popup">
+                    <div class="popup-box">
+
+                        <h2>🔥 Promoção do Dia</h2>
+
+                        <p>
+                            De <s>R$ 29,90</s>
+                        </p>
+
+                        <h3>R$ 19,90</h3>
+
+                        <label for="promo5" class="close">
+                            Fechar
+                        </label>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="card" style="width: 18rem;">
+            <img src="./img/Pratos/galo-imagem-receitas-macarrao-a-caprese-share.jpg" class="card-img-top">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    Macarrão à Caprese
+                </h5>
+
+                <p class="card-text">
+                    Tomate, queijo e manjericão.
+                </p>
+
+                <input type="checkbox" id="promo6" class="popup-toggle">
+
+                <label for="promo6" class="btn btn-warning">
+                    🔥 Promoção do Dia
+                </label>
+
+                <div class="popup">
+                    <div class="popup-box">
+
+                        <h2>🔥 Promoção do Dia</h2>
+
+                        <p>
+                            De <s>R$ 42,90</s>
+                        </p>
+
+                        <h3>R$ 32,90</h3>
+
+                        <label for="promo6" class="close">
+                            Fechar
+                        </label>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="card" style="width: 18rem;">
+            <img src="./img/Pratos/Marcarrao com burrta e parma.jpg" class="card-img-top">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    Macarrão com Burrata e Parma
+                </h5>
+
+                <p class="card-text">
+                    Combinação sofisticada e cremosa.
+                </p>
+
+                <input type="checkbox" id="promo7" class="popup-toggle">
+
+                <label for="promo7" class="btn btn-warning">
+                    🔥 Promoção do Dia
+                </label>
+
+                <div class="popup">
+                    <div class="popup-box">
+
+                        <h2>🔥 Promoção do Dia</h2>
+
+                        <p>
+                            De <s>R$ 59,90</s>
+                        </p>
+
+                        <h3>R$ 44,90</h3>
+
+                        <label for="promo7" class="close">
+                            Fechar
+                        </label>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="card" style="width: 18rem;">
+            <img src="./img/Pratos/Macarrao ao sugo.jpg" class="card-img-top">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    Macarrão ao Sugo
+                </h5>
+
+                <p class="card-text">
+                    Molho de tomate simples e caseiro.
+                </p>
+
+                <input type="checkbox" id="promo8" class="popup-toggle">
+
+                <label for="promo8" class="btn btn-warning">
+                    🔥 Promoção do Dia
+                </label>
+
+                <div class="popup">
+                    <div class="popup-box">
+
+                        <h2>🔥 Promoção do Dia</h2>
+
+                        <p>
+                            De <s>R$ 28,90</s>
+                        </p>
+
+                        <h3>R$ 18,90</h3>
+
+                        <label for="promo8" class="close">
+                            Fechar
+                        </label>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- ================= Rodapé ================= -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h2>Restaurante Sabor & Arte</h2>
+                <p>Comida feita com amor e ingredientes frescos.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contato</h3>
+                <p id="localizacao">📍 Rua Exemplo, 123 - São Paulo</p>
+                <p id="contato">📞 (12) 99999-9999</p>
+                <p>✉️ contato@restaurante.com</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Horário</h3>
+                <p>Seg - Dom</p>
+                <p>11h às 23h</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Redes sociais</h3>
+                <p>Instagram | Facebook | TikTok</p>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>© 2026 Restaurante Sabor & Arte - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- ================= JAVASCRIPT DO BOOTSTRAP ================= -->
+
+    <!-- Faz o carrossel e outros componentes funcionarem -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

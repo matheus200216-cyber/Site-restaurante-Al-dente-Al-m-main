@@ -1,0 +1,482 @@
+/* ================= FUNDO DO SITE ================= */
+
+/* Estilo geral do body */
+body {
+
+    /* Cor de fundo do site */
+    background-color: #460000;
+
+    /* Fonte principal */
+    font-family: Arial, sans-serif;
+
+    /* Remove margem padrão */
+    margin: 0;
+
+    /* Remove espaçamento interno padrão */
+    padding: 0;
+}
+
+/* ================= CABEÇALHO ================= */
+
+header {
+
+    /* Gradiente de cores */
+    background: linear-gradient(
+        to right,
+        #460000
+    );
+
+    /* Espaçamento interno */
+    padding: 0px 5px;
+
+    /* Deixa elementos lado a lado */
+    display: flex;
+
+    /* Centraliza verticalmente */
+    align-items: center;
+
+    /* Espaço entre logo e menu */
+    justify-content: space-between;
+
+    /* Sombra embaixo */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= LOGO ================= */
+
+.logo {
+
+    /* Tamanho da logo */
+    width: 200px;
+
+    position: relative;
+
+    /* Move visualmente a imagem. */
+    top: 10px;
+
+    /* Empurra usando espaçamento. */
+    /* margin-top */
+}
+
+.logo:hover{
+
+    transform: scale(1.2);
+
+}
+/* ================= MENU ================= */
+
+nav a {
+
+    /* Cor do texto */
+    color: #fafafa;
+
+    /* Remove sublinhado */
+    text-decoration: none;
+
+    /* Espaço entre links */
+    margin-left: 25px;
+
+    /* Tamanho da fonte */
+    font-size: 18px;
+
+    /* Deixa em negrito */
+    font-weight: bold;
+
+    /* Animação suave */
+    transition: 0.3s;
+
+    /* Permite mover os elementos na pagina como top,left,right e bottom */
+    position: relative;
+
+    left: -50px;
+}
+
+/* ================= EFEITO HOVER ================= */
+
+nav a:hover {
+
+    /* Cor quando passa o mouse */
+    color: #CD212A;
+}
+
+/* ================= CARROSSEL ================= */
+
+.carousel-item img {
+
+    /* Altura fixa das imagens */
+    height: 700px;
+
+    /* Faz imagem preencher sem distorcer */
+    object-fit: cover;
+
+    /* Linha verde embaixo */
+    border-bottom: 3px solid #030303;
+
+    margin-top: 5px;
+}
+
+/* ================= TEXTO DO CARROSSEL ================= */
+
+.carousel-caption {
+
+    /* Fundo preto transparente */
+    background: rgba(0, 0, 0, 0.5);
+
+    /* Espaçamento interno */
+    padding: 15px;
+
+    /* Bordas arredondadas */
+    border-radius: 10px;
+}
+
+/* ================= TÍTULOS ================= */
+
+h1,
+h2,
+h3 {
+
+    /* Cor vermelha */
+    color: #CD212A;
+}
+
+/* ================= BOTÃO PERSONALIZADO ================= */
+
+.btn-italia {
+
+    /* Cor verde */
+    background-color: #008C45;
+
+    /* Cor do texto */
+    color: white;
+
+    /* Remove borda */
+    border: none;
+
+    /* Espaçamento interno */
+    padding: 10px 20px;
+
+    /* Bordas arredondadas */
+    border-radius: 8px;
+}
+
+/* ================= HOVER DO BOTÃO ================= */
+
+.btn-italia:hover {
+
+    /* Troca para vermelho */
+    background-color: #CD212A;
+}
+
+/* ================= RODAPÉ ================= */
+
+footer {
+
+    /* Fundo escuro */
+    background-color: #222;
+
+    /* Texto branco */
+    color: white;
+
+    /* Centraliza texto */
+    text-align: center;
+
+    /* Espaçamento interno */
+    padding: 20px;
+
+    /* Espaço acima */
+    margin-top: 40px;
+}
+
+
+
+.cardapio{
+
+    margin-top: 50px;
+
+    /* Serve para mexer no texto */
+    text-align: center;
+
+    font-size: 40px;
+
+    color: white;
+}
+
+
+/* ================= ÁREA DOS PRODUTOS ================= */
+
+.produtos{
+
+    /* Coloca os cards lado a lado */
+    display: flex;
+
+    /* Permite quebrar linha */
+    flex-wrap: wrap;
+
+    /* Espaço entre cards */
+    gap: 20px;
+
+    /* Centraliza os cards */
+    justify-content: center;
+
+    /* Espaço interno */
+    padding: 20px;
+}
+
+/* ================= CARD ================= */
+
+.card{
+
+    width: 18rem;
+
+    /* Altura fixa */
+    height: 500px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+/* ================= IMAGEM ================= */
+
+.card img{
+
+    /* Altura padrão */
+    height: 180px;
+
+    /* Preenche sem deformar */
+    object-fit: cover;
+
+    /* Ocupa toda largura */
+    width: 100%;
+}
+
+/* ================= CORPO DO CARD ================= */
+
+.card-body{
+
+   display: flex;
+
+    flex-direction: column;
+
+    height: 0%;
+}
+
+/* ================= TEXTO ================= */
+
+.card-text{
+
+    /* Faz texto ocupar espaço */
+    flex-grow: 1;
+}
+
+/* ================= BOTÃO ================= */
+
+.card-body .btn{
+
+    /* Faz botão ficar alinhado */
+    margin-top: auto;
+}
+
+
+
+/* ================= RODAPE ================= */
+.footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-box {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-box h2,
+.footer-box h3 {
+  color: #ff4d4d;
+  margin-bottom: 10px;
+}
+
+.footer-box p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.popup-toggle {
+    display: none;
+}
+
+/* fundo escuro */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: 0.3s;
+
+    z-index: 99999; 
+}
+
+/* quando clicar (abre popup) */
+.popup-toggle:checked ~ .popup {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* caixa do popup */
+.popup-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* botão abrir */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* botão fechar */
+.close {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.comentarios{
+
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.avaliacao-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.stars {
+    margin-bottom: 20px;
+}
+
+.stars span {
+    font-size: 40px;
+    cursor: pointer;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.stars span:hover,
+.stars span.active {
+    color: gold;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    resize: none;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+button {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0b5ed7;
+}
+
+
+/* Remove fundo azul do botão do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+    background: transparent !important;
+    border: none;
+}
+
+/* Remove efeito azul ao clicar */
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
