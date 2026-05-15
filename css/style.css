@@ -21,10 +21,8 @@ body {
 header {
 
     /* Gradiente de cores */
-    background: linear-gradient(
-        to right,
-        #460000
-    );
+    background: linear-gradient(to right,
+            #460000);
 
     /* Espaçamento interno */
     padding: 0px 5px;
@@ -58,11 +56,12 @@ header {
     /* margin-top */
 }
 
-.logo:hover{
+.logo:hover {
 
     transform: scale(1.2);
 
 }
+
 /* ================= MENU ================= */
 
 nav a {
@@ -189,7 +188,7 @@ footer {
 
 
 
-.cardapio{
+.cardapio {
 
     margin-top: 50px;
 
@@ -204,7 +203,7 @@ footer {
 
 /* ================= ÁREA DOS PRODUTOS ================= */
 
-.produtos{
+.produtos {
 
     /* Coloca os cards lado a lado */
     display: flex;
@@ -224,7 +223,7 @@ footer {
 
 /* ================= CARD ================= */
 
-.card{
+.card {
 
     width: 18rem;
 
@@ -238,7 +237,7 @@ footer {
 
 /* ================= IMAGEM ================= */
 
-.card img{
+.card img {
 
     /* Altura padrão */
     height: 180px;
@@ -252,9 +251,9 @@ footer {
 
 /* ================= CORPO DO CARD ================= */
 
-.card-body{
+.card-body {
 
-   display: flex;
+    display: flex;
 
     flex-direction: column;
 
@@ -263,7 +262,7 @@ footer {
 
 /* ================= TEXTO ================= */
 
-.card-text{
+.card-text {
 
     /* Faz texto ocupar espaço */
     flex-grow: 1;
@@ -271,7 +270,7 @@ footer {
 
 /* ================= BOTÃO ================= */
 
-.card-body .btn{
+.card-body .btn {
 
     /* Faz botão ficar alinhado */
     margin-top: auto;
@@ -281,44 +280,44 @@ footer {
 
 /* ================= RODAPE ================= */
 .footer {
-  background-color: #1c1c1c;
-  color: #fff;
-  padding: 40px 20px;
-  font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  max-width: 1100px;
-  margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .footer-box {
-  flex: 1;
-  min-width: 200px;
+    flex: 1;
+    min-width: 200px;
 }
 
 .footer-box h2,
 .footer-box h3 {
-  color: #ff4d4d;
-  margin-bottom: 10px;
+    color: #ff4d4d;
+    margin-bottom: 10px;
 }
 
 .footer-box p {
-  font-size: 14px;
-  line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 .footer-bottom {
-  text-align: center;
-  margin-top: 30px;
-  border-top: 1px solid #333;
-  padding-top: 15px;
-  font-size: 13px;
-  color: #aaa;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #aaa;
 }
 
 .popup-toggle {
@@ -346,11 +345,11 @@ footer {
 
     transition: 0.3s;
 
-    z-index: 99999; 
+    z-index: 99999;
 }
 
 /* quando clicar (abre popup) */
-.popup-toggle:checked ~ .popup {
+.popup-toggle:checked~.popup {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -364,7 +363,7 @@ footer {
     width: 300px;
     text-align: center;
 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* botão abrir */
@@ -385,14 +384,14 @@ footer {
     border-radius: 5px;
 }
 
-.comentarios{
+.comentarios {
 
     max-width: 400px;
     margin: 40px auto;
     padding: 25px;
     border-radius: 12px;
     background: #ffffff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
     text-align: center;
 }
@@ -461,22 +460,141 @@ button:hover {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 50%;
     padding: 20px;
 }
 
+/* ================= RESPONSIVIDADE CELULAR ================= */
 
+@media (max-width: 768px) {
 
+    /* HEADER */
 
+    header {
 
+        flex-direction: column;
 
+        padding: 15px;
 
+        text-align: center;
+    }
 
+    /* LOGO */
 
+    .logo {
 
+        width: 140px;
 
+        top: 0;
+    }
 
+    /* MENU */
 
+    nav {
 
+        display: flex;
 
+        flex-direction: column;
+
+        align-items: center;
+
+        margin-top: 15px;
+
+        gap: 10px;
+    }
+
+    nav a {
+
+        left: 0;
+
+        margin-left: 0;
+
+        font-size: 16px;
+    }
+
+    /* CARROSSEL */
+
+    .carousel-item img {
+
+        height: 250px;
+    }
+
+    /* TEXTO DO CARROSSEL */
+
+    .carousel-caption {
+
+        padding: 8px;
+    }
+
+    .carousel-caption h5 {
+
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+
+        font-size: 12px;
+    }
+
+    /* TITULO */
+
+    .cardapio {
+
+        font-size: 28px;
+
+        margin-top: 30px;
+    }
+
+    /* CARDS */
+
+    .produtos {
+
+        padding: 10px;
+
+        gap: 15px;
+    }
+
+    .card {
+
+        width: 100% !important;
+
+        max-width: 320px;
+
+        height: auto;
+    }
+
+    .card img {
+
+        height: 200px;
+    }
+
+    /* POPUP */
+
+    .popup-box {
+
+        width: 90%;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .footer-box {
+
+        width: 100%;
+    }
+
+    /* TEXTAREA */
+
+    textarea {
+
+        width: 100%;
+    }
+
+}
