@@ -84,10 +84,7 @@ nav a {
     /* Animação suave */
     transition: 0.3s;
 
-    /* Permite mover os elementos na pagina como top,left,right e bottom */
-    position: relative;
-
-    left: -50px;
+  
 }
 
 /* ================= EFEITO HOVER ================= */
@@ -598,3 +595,137 @@ button:hover {
     }
 
 }
+
+/* ================= RESPONSIVIDADE CELULAR ================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    header {
+
+        flex-direction: column;
+
+        padding: 15px;
+
+        text-align: center;
+    }
+
+    /* LOGO */
+
+    .logo {
+
+        width: 140px;
+
+        top: 0;
+    }
+
+    /* MENU */
+
+    nav {
+
+        margin-top: 15px;
+    }
+
+    nav a {
+
+        margin: 10px;
+
+        font-size: 18px;
+
+        display: inline-block;
+    }
+
+    /* CARROSSEL */
+
+    .carousel-item img {
+
+        height: 250px;
+    }
+
+    /* TEXTO DO CARROSSEL */
+
+    .carousel-caption {
+
+        padding: 8px;
+    }
+
+    .carousel-caption h5 {
+
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+
+        font-size: 12px;
+    }
+
+    /* TITULO */
+
+    .cardapio {
+
+        font-size: 28px;
+
+        margin-top: 30px;
+    }
+
+    /* CARDS */
+
+    .produtos {
+
+        padding: 10px;
+
+        gap: 15px;
+    }
+
+    .card {
+
+        width: 100% !important;
+
+        max-width: 320px;
+
+        height: auto;
+    }
+
+    .card img {
+
+        height: 200px;
+    }
+
+    /* POPUP */
+
+    .popup-box {
+
+        width: 90%;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .footer-box {
+
+        width: 100%;
+    }
+
+    /* TEXTAREA */
+
+    textarea {
+
+        width: 100%;
+    }
+
+}
+
+/* BOTÃO MENU MOBILE */
+
+.navbar-toggler {
+
+    background-color: white;
+}
+
