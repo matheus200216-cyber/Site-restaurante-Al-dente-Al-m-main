@@ -34,7 +34,7 @@
 
         <!-- Menu de navegação -->
         <nav>
-       
+
             <a href="#cardapio">
                 🍽️ Cardápio do dia
             </a>
@@ -55,7 +55,9 @@
                 ⭐ Avaliação
             </a>
 
-
+            <a href="#" id="abrirCarrinho">
+                🛒 Carrinho (<span id="contador">0</span>)
+            </a>
         </nav>
 
 
@@ -176,7 +178,6 @@
 
     <!-- ================= CARD ================= -->
 
-
     <div class="container secao produtos">
 
         <!-- CARD 1 -->
@@ -194,12 +195,21 @@
                     sabor intenso, cremosidade e o toque crocante.
                 </p>
 
-                <!-- POPUP -->
                 <input type="checkbox" id="promo1" class="popup-toggle">
 
-                <label for="promo1" class="btn btn-warning">
-                    🔥 Promoção do Dia
-                </label>
+                <div class="d-flex gap-2">
+
+                    <label for="promo1" class="btn btn-warning">
+                        🔥 Promoção
+                    </label>
+
+                    <button class="btn btn-success comprar" data-nome="Macarrão de Carne Moída ao Bacon"
+                        data-preco="29.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
                 <div class="popup">
                     <div class="popup-box">
@@ -238,9 +248,18 @@
 
                 <input type="checkbox" id="promo2" class="popup-toggle">
 
-                <label for="promo2" class="btn btn-warning">
-                    🔥 Promoção do Dia
-                </label>
+                <div class="d-flex gap-2">
+
+                    <label for="promo2" class="btn btn-warning">
+                        🔥 Promoção
+                    </label>
+
+                    <button class="btn btn-success comprar" data-nome="Macarrão com Frango" data-preco="24.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
                 <div class="popup">
                     <div class="popup-box">
@@ -279,9 +298,18 @@
 
                 <input type="checkbox" id="promo3" class="popup-toggle">
 
-                <label for="promo3" class="btn btn-warning">
-                    🔥 Promoção do Dia
-                </label>
+                <div class="d-flex gap-2">
+
+                    <label for="promo3" class="btn btn-warning">
+                        🔥 Promoção
+                    </label>
+
+                    <button class="btn btn-success comprar" data-nome="Macarrão ao Molho Branco" data-preco="26.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
                 <div class="popup">
                     <div class="popup-box">
@@ -320,9 +348,18 @@
 
                 <input type="checkbox" id="promo4" class="popup-toggle">
 
-                <label for="promo4" class="btn btn-warning">
-                    🔥 Promoção do Dia
-                </label>
+                <div class="d-flex gap-2">
+
+                    <label for="promo4" class="btn btn-warning">
+                        🔥 Promoção
+                    </label>
+
+                    <button class="btn btn-success comprar" data-nome="Macarrão com Calabresa" data-preco="27.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
                 <div class="popup">
                     <div class="popup-box">
@@ -345,6 +382,7 @@
             </div>
         </div>
 
+
         <!-- CARD 5 -->
         <div class="card" style="width: 18rem;">
             <img src="./img/Pratos/Macarrao alho e oleo.png" class="card-img-top">
@@ -361,9 +399,18 @@
 
                 <input type="checkbox" id="promo5" class="popup-toggle">
 
-                <label for="promo5" class="btn btn-warning">
-                    🔥 Promoção do Dia
-                </label>
+                <div class="d-flex gap-2">
+
+                    <label for="promo5" class="btn btn-warning">
+                        🔥 Promoção
+                    </label>
+
+                    <button class="btn btn-success comprar" data-nome="Macarrão Alho e Óleo" data-preco="19.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
                 <div class="popup">
                     <div class="popup-box">
@@ -402,9 +449,18 @@
 
                 <input type="checkbox" id="promo6" class="popup-toggle">
 
-                <label for="promo6" class="btn btn-warning">
-                    🔥 Promoção do Dia
-                </label>
+                <div class="d-flex gap-2">
+
+                    <label for="promo6" class="btn btn-warning">
+                        🔥 Promoção
+                    </label>
+
+                    <button class="btn btn-success comprar" data-nome="Macarrão à Caprese" data-preco="32.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
                 <div class="popup">
                     <div class="popup-box">
@@ -443,9 +499,18 @@
 
                 <input type="checkbox" id="promo7" class="popup-toggle">
 
-                <label for="promo7" class="btn btn-warning">
-                    🔥 Promoção do Dia
-                </label>
+                <div class="d-flex gap-2">
+
+                    <label for="promo7" class="btn btn-warning">
+                        🔥 Promoção
+                    </label>
+
+                    <button class="btn btn-success comprar" data-nome="Macarrão com Burrata e Parma" data-preco="44.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
                 <div class="popup">
                     <div class="popup-box">
@@ -484,9 +549,18 @@
 
                 <input type="checkbox" id="promo8" class="popup-toggle">
 
-                <label for="promo8" class="btn btn-warning">
-                    🔥 Promoção do Dia
-                </label>
+                <div class="d-flex gap-2">
+
+                    <label for="promo8" class="btn btn-warning">
+                        🔥 Promoção
+                    </label>
+
+                    <button class="btn btn-success comprar" data-nome="Macarrão ao Sugo" data-preco="18.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
                 <div class="popup">
                     <div class="popup-box">
@@ -508,8 +582,8 @@
 
             </div>
         </div>
-
     </div>
+
 
 
 
@@ -549,6 +623,89 @@
             <p>© 2026 Restaurante Sabor & Arte - Todos os direitos reservados</p>
         </div>
     </footer>
+
+    ><!-- CARRINHO -->
+    <div id="carrinhoBox" class="carrinho-box">
+
+        <h2>🛒 Meu Carrinho</h2>
+
+        <ul id="listaCarrinho"></ul>
+
+    </div>
+
+    <script>
+
+        let contador = 0;
+
+        let carrinho = [];
+
+        // pega todos os botões comprar
+        const botoes = document.querySelectorAll(".comprar");
+
+        // percorre os botões
+        botoes.forEach(botao => {
+
+            botao.addEventListener("click", () => {
+
+                contador++;
+
+                document.getElementById("contador").innerText = contador;
+
+                // pega nome do produto
+                const nome = botao.dataset.nome;
+
+                // adiciona no array
+                carrinho.push(nome);
+
+                // atualiza lista visual
+                atualizarCarrinho();
+
+                alert(nome + " foi adicionado ao carrinho!");
+
+            });
+
+        });
+
+        // atualiza lista
+        function atualizarCarrinho() {
+
+            const lista = document.getElementById("listaCarrinho");
+
+            lista.innerHTML = "";
+
+            carrinho.forEach(item => {
+
+                lista.innerHTML += `<li>${item}</li>`;
+
+            });
+
+        }
+
+        // abrir e fechar carrinho
+        document.getElementById("abrirCarrinho")
+            .addEventListener("click", (e) => {
+
+                e.preventDefault();
+
+                const box = document.getElementById("carrinhoBox");
+
+                if (box.style.display === "block") {
+
+                    box.style.display = "none";
+
+                } else {
+
+                    box.style.display = "block";
+
+                }
+
+            });
+
+    </script>
+
+
+
+
 
 
 

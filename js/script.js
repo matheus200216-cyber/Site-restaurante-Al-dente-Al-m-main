@@ -35,3 +35,4 @@ avaliacoes.forEach(avaliacao => {
 
     container.appendChild(card);
 });
+

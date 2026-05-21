@@ -84,7 +84,7 @@ nav a {
     /* Animação suave */
     transition: 0.3s;
 
-  
+
 }
 
 /* ================= EFEITO HOVER ================= */
@@ -729,3 +729,46 @@ button:hover {
     background-color: white;
 }
 
+/* ================= CARRINHO ================= */
+
+.carrinho-box {
+
+    position: fixed;
+
+    top: 80px;
+
+    right: 20px;
+
+    width: 300px;
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+
+    display: none;
+
+    z-index: 99999;
+}
+
+.carrinho-box h2 {
+
+    margin-bottom: 15px;
+
+    color: #000;
+}
+
+.carrinho-box ul {
+
+    padding-left: 20px;
+}
+
+.carrinho-box li {
+
+    margin-bottom: 10px;
+
+    color: #000;
+}

@@ -18,6 +18,11 @@
         <a href="index.html" class="btn btn-danger">
             Voltar ao site
         </a>
+
+        <a href="#" id="abrirCarrinho">
+            🛒 Carrinho (<span id="contador">0</span>)
+        </a>
+
     </nav>
 
 
@@ -29,9 +34,6 @@
         </div>
 
     </div>
-
-
-
 
 
 
@@ -52,9 +54,18 @@
                     queijo parmesão e toque especial de pimenta-do-reino.
                 </p>
 
-                <button class="btn btn-primary">
-                    R$ 32,90
-                </button>
+                <div class="d-flex gap-2">
+
+                    <button class="btn btn-primary">
+                        R$ 32,90
+                    </button>
+
+                    <button class="btn btn-success comprar" data-nome="Espaguete Carbonara" data-preco="32.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
             </div>
         </div>
@@ -74,9 +85,18 @@
                     preparado com parmesão e manteiga especial.
                 </p>
 
-                <button class="btn btn-primary">
-                    R$ 27,90
-                </button>
+                <div class="d-flex gap-2">
+
+                    <button class="btn btn-primary">
+                        R$ 27,90
+                    </button>
+
+                    <button class="btn btn-success comprar" data-nome="Fettuccine Alfredo" data-preco="27.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
             </div>
         </div>
@@ -96,9 +116,18 @@
                     preparado com manjericão fresco e parmesão.
                 </p>
 
-                <button class="btn btn-primary">
-                    R$ 29,90
-                </button>
+                <div class="d-flex gap-2">
+
+                    <button class="btn btn-primary">
+                        R$ 29,90
+                    </button>
+
+                    <button class="btn btn-success comprar" data-nome="Penne ao Pesto" data-preco="29.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
             </div>
         </div>
@@ -118,9 +147,18 @@
                     queijo derretido e muito sabor.
                 </p>
 
-                <button class="btn btn-primary">
-                    R$ 39,90
-                </button>
+                <div class="d-flex gap-2">
+
+                    <button class="btn btn-primary">
+                        R$ 39,90
+                    </button>
+
+                    <button class="btn btn-success comprar" data-nome="Lasanha à Bolonhesa" data-preco="39.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
             </div>
         </div>
@@ -140,9 +178,18 @@
                     e molho especial levemente cremoso.
                 </p>
 
-                <button class="btn btn-primary">
-                    R$ 49,90
-                </button>
+                <div class="d-flex gap-2">
+
+                    <button class="btn btn-primary">
+                        R$ 49,90
+                    </button>
+
+                    <button class="btn btn-success comprar" data-nome="Talharim ao Camarão" data-preco="49.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
             </div>
         </div>
@@ -162,9 +209,18 @@
                     de tomate fresco e ervas finas.
                 </p>
 
-                <button class="btn btn-primary">
-                    R$ 35,90
-                </button>
+                <div class="d-flex gap-2">
+
+                    <button class="btn btn-primary">
+                        R$ 35,90
+                    </button>
+
+                    <button class="btn btn-success comprar" data-nome="Ravioli de Queijo" data-preco="35.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
             </div>
         </div>
@@ -184,9 +240,18 @@
                     e queijo gratinado.
                 </p>
 
-                <button class="btn btn-primary">
-                    R$ 31,90
-                </button>
+                <div class="d-flex gap-2">
+
+                    <button class="btn btn-primary">
+                        R$ 31,90
+                    </button>
+
+                    <button class="btn btn-success comprar" data-nome="Nhoque ao Molho Branco" data-preco="31.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
             </div>
         </div>
@@ -206,9 +271,18 @@
                     selecionados e toque sofisticado.
                 </p>
 
-                <button class="btn btn-primary">
-                    R$ 42,90
-                </button>
+                <div class="d-flex gap-2">
+
+                    <button class="btn btn-primary">
+                        R$ 42,90
+                    </button>
+
+                    <button class="btn btn-success comprar" data-nome="Espaguete ao Funghi" data-preco="42.90">
+
+                        🛒 Comprar
+                    </button>
+
+                </div>
 
             </div>
         </div>
@@ -216,6 +290,77 @@
     </div>
 
 
+
+
+    <script>
+
+        let contador = 0;
+
+        let carrinho = [];
+
+        // pega todos os botões comprar
+        const botoes = document.querySelectorAll(".comprar");
+
+        // percorre os botões
+        botoes.forEach(botao => {
+
+            botao.addEventListener("click", () => {
+
+                contador++;
+
+                document.getElementById("contador").innerText = contador;
+
+                // pega nome do produto
+                const nome = botao.dataset.nome;
+
+                // adiciona no array
+                carrinho.push(nome);
+
+                // atualiza lista visual
+                atualizarCarrinho();
+
+                alert(nome + " foi adicionado ao carrinho!");
+
+            });
+
+        });
+
+        // atualiza lista
+        function atualizarCarrinho() {
+
+            const lista = document.getElementById("listaCarrinho");
+
+            lista.innerHTML = "";
+
+            carrinho.forEach(item => {
+
+                lista.innerHTML += `<li>${item}</li>`;
+
+            });
+
+        }
+
+        // abrir e fechar carrinho
+        document.getElementById("abrirCarrinho")
+            .addEventListener("click", (e) => {
+
+                e.preventDefault();
+
+                const box = document.getElementById("carrinhoBox");
+
+                if (box.style.display === "block") {
+
+                    box.style.display = "none";
+
+                } else {
+
+                    box.style.display = "block";
+
+                }
+
+            });
+
+    </script>
 
 
 
