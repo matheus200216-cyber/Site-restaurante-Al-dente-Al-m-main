@@ -7,7 +7,7 @@ body {
     background-color: #460000;
 
     /* Fonte principal */
-    font-family: Arial, sans-serif;
+    font-family: cursive;
 
     /* Remove margem padrão */
     margin: 0;
@@ -25,7 +25,7 @@ header {
             #460000);
 
     /* Espaçamento interno */
-    padding: 0px 5px;
+    padding: 0px 3px;
 
     /* Deixa elementos lado a lado */
     display: flex;
@@ -37,7 +37,7 @@ header {
     justify-content: space-between;
 
     /* Sombra embaixo */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 10px rgb(0, 0, 0);
 }
 
 /* ================= LOGO ================= */
@@ -45,7 +45,7 @@ header {
 .logo {
 
     /* Tamanho da logo */
-    width: 200px;
+    width: 210px;
 
     position: relative;
 
@@ -80,7 +80,7 @@ nav a {
     font-weight: bold;
 
     /* Animação suave */
-    transition: 0.3s;
+    transition: 0.4s;
 
 
 }
@@ -98,7 +98,7 @@ nav a:hover {
 .carousel-item img {
 
     /* Altura fixa das imagens */
-    height: 700px;
+    height: 800px;
 
     /* Faz imagem preencher sem distorcer */
     object-fit: cover;
@@ -107,6 +107,29 @@ nav a:hover {
     border-bottom: 3px solid #030303;
 
     margin-top: 5px;
+
+
+}
+
+/* Remove fundo azul do botão do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+    background: transparent !important;
+    border: none;
+}
+
+/* Remove efeito azul ao clicar */
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 20px;
 }
 
 /* ================= TEXTO DO CARROSSEL ================= */
@@ -122,65 +145,6 @@ nav a:hover {
     /* Bordas arredondadas */
     border-radius: 10px;
 }
-
-/* ================= TÍTULOS ================= */
-
-h1,
-h2,
-h3 {
-
-    /* Cor vermelha */
-    color: #CD212A;
-}
-
-/* ================= BOTÃO PERSONALIZADO ================= */
-
-.btn-italia {
-
-    /* Cor verde */
-    background-color: #008C45;
-
-    /* Cor do texto */
-    color: white;
-
-    /* Remove borda */
-    border: none;
-
-    /* Espaçamento interno */
-    padding: 10px 20px;
-
-    /* Bordas arredondadas */
-    border-radius: 8px;
-}
-
-/* ================= HOVER DO BOTÃO ================= */
-
-.btn-italia:hover {
-
-    /* Troca para vermelho */
-    background-color: #CD212A;
-}
-
-/* ================= RODAPÉ ================= */
-
-footer {
-
-    /* Fundo escuro */
-    background-color: #222;
-
-    /* Texto branco */
-    color: white;
-
-    /* Centraliza texto */
-    text-align: center;
-
-    /* Espaçamento interno */
-    padding: 20px;
-
-    /* Espaço acima */
-    margin-top: 40px;
-}
-
 
 
 .cardapio {
@@ -439,160 +403,8 @@ button:hover {
 }
 
 
-/* Remove fundo azul do botão do carrossel */
-.carousel-control-prev,
-.carousel-control-next {
-    background: transparent !important;
-    border: none;
-}
 
-/* Remove efeito azul ao clicar */
-.carousel-control-prev:focus,
-.carousel-control-next:focus {
-    box-shadow: none;
-    outline: none;
-}
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 50%;
-    padding: 20px;
-}
-
-/* ================= RESPONSIVIDADE CELULAR ================= */
-
-@media (max-width: 768px) {
-
-    /* HEADER */
-
-    header {
-
-        flex-direction: column;
-
-        padding: 15px;
-
-        text-align: center;
-    }
-
-    /* LOGO */
-
-    .logo {
-
-        width: 140px;
-
-        top: 0;
-    }
-
-    /* MENU */
-
-    nav {
-
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        margin-top: 15px;
-
-        gap: 10px;
-    }
-
-    nav a {
-
-        left: 0;
-
-        margin-left: 0;
-
-        font-size: 16px;
-    }
-
-    /* CARROSSEL */
-
-    .carousel-item img {
-
-        height: 250px;
-    }
-
-    /* TEXTO DO CARROSSEL */
-
-    .carousel-caption {
-
-        padding: 8px;
-    }
-
-    .carousel-caption h5 {
-
-        font-size: 16px;
-    }
-
-    .carousel-caption p {
-
-        font-size: 12px;
-    }
-
-    /* TITULO */
-
-    .cardapio {
-
-        font-size: 28px;
-
-        margin-top: 30px;
-    }
-
-    /* CARDS */
-
-    .produtos {
-
-        padding: 10px;
-
-        gap: 15px;
-    }
-
-    .card {
-
-        width: 100% !important;
-
-        max-width: 320px;
-
-        height: auto;
-    }
-
-    .card img {
-
-        height: 200px;
-    }
-
-    /* POPUP */
-
-    .popup-box {
-
-        width: 90%;
-    }
-
-    /* FOOTER */
-
-    .footer-container {
-
-        flex-direction: column;
-
-        text-align: center;
-    }
-
-    .footer-box {
-
-        width: 100%;
-    }
-
-    /* TEXTAREA */
-
-    textarea {
-
-        width: 100%;
-    }
-
-}
 
 /* ================= RESPONSIVIDADE CELULAR ================= */
 
@@ -720,12 +532,7 @@ button:hover {
 
 }
 
-/* BOTÃO MENU MOBILE */
 
-.navbar-toggler {
-
-    background-color: white;
-}
 
 /* ================= CARRINHO ================= */
 
