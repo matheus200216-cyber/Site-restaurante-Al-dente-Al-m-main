@@ -50,15 +50,13 @@ header {
     position: relative;
 
     /* Move visualmente a imagem. */
-    top: 10px;
+    top: center;
 
-    /* Empurra usando espaçamento. */
-    /* margin-top */
 }
 
 .logo:hover {
 
-    transform: scale(1.2);
+    transform: scale(1.3);
 
 }
 
