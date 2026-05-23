@@ -149,7 +149,7 @@ nav a:hover {
 
 .cardapio {
 
-    margin-top: 50px;
+    margin-top: 5px;
 
     /* Serve para mexer no texto */
     text-align: center;
@@ -183,28 +183,25 @@ nav a:hover {
 /* ================= CARD ================= */
 
 .card {
-
     width: 18rem;
 
-    /* Altura fixa */
-    height: 500px;
+    /* Altura fixa total do card */
+    height: 450px;
 
     display: flex;
 
     flex-direction: column;
 }
 
+
 /* ================= IMAGEM ================= */
 
 .card img {
 
-    /* Altura padrão */
-    height: 180px;
+    height: 200px;
 
-    /* Preenche sem deformar */
     object-fit: cover;
 
-    /* Ocupa toda largura */
     width: 100%;
 }
 
@@ -215,8 +212,11 @@ nav a:hover {
     display: flex;
 
     flex-direction: column;
+   
+    /* Isso faz o corpo ocupar de forma inteligente o espaço que sobrou (250px) */
+    flex-grow: 1;
 
-    height: 0%;
+    background-color: #e2bfc0;
 }
 
 /* ================= TEXTO ================= */
@@ -236,8 +236,8 @@ nav a:hover {
 }
 
 
-
 /* ================= RODAPE ================= */
+
 .footer {
     background-color: #1c1c1c;
     color: #fff;
@@ -402,10 +402,6 @@ button:hover {
     background: #0b5ed7;
 }
 
-
-
-
-
 /* ================= RESPONSIVIDADE CELULAR ================= */
 
 @media (max-width: 768px) {
@@ -531,7 +527,6 @@ button:hover {
     }
 
 }
-
 
 
 /* ================= CARRINHO ================= */
