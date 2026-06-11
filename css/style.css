@@ -212,7 +212,7 @@ nav a:hover {
     display: flex;
 
     flex-direction: column;
-   
+
     /* Isso faz o corpo ocupar de forma inteligente o espaço que sobrou (250px) */
     flex-grow: 1;
 
@@ -571,4 +571,19 @@ button:hover {
     margin-bottom: 10px;
 
     color: #000;
+}
+
+.carrinho-box li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrinho-box li button {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 4px 8px;
 }
