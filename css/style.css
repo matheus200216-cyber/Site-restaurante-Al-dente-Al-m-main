@@ -304,7 +304,7 @@ nav a:hover {
 
     transition: 0.3s;
 
-    z-index: 99999;
+    z-index: 99999; /* para ficar acima de todo o conteúdo */
 }
 
 /* quando clicar (abre popup) */
@@ -327,7 +327,7 @@ nav a:hover {
 
 /* botão abrir */
 .btn {
-    display: inline-block;
+    display: inline-block; /* fica na mesma linha do texto */
     margin-top: 10px;
     cursor: pointer;
 }
